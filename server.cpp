@@ -1,11 +1,14 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include "httplib.h" // Make sure this file is in your backend folder!
-#include "json.hpp"  // Assuming you use this for JSON parsing
+#define _WIN32_WINNT 0x0A00
+#endif
 
-using namespace httplib;
+#include "crow.h"
+#include <nlohmann/json.hpp>
+#include <iostream>
+#include <string>
+#include <algorithm>
+
 using json = nlohmann::json;
+// ... (Leave the rest of your code exactly the same)
 
 int main() {
     Server svr;
